@@ -5,6 +5,7 @@ import Button from "./button";
 import { WeiterContext } from "../WeiterContext";
 import "./Bill.scss";
 
+
 export default function Bill() {
   let { bill } = useContext(WeiterContext);
   const [sum, setTotal] = useState(0);
@@ -26,9 +27,13 @@ export default function Bill() {
   };
 
   const iva = getTotal() * 0.1;
-  const tax = iva.toString(2)
+  const tax = Math.trunc(iva);
   const totalWithIva = iva + getTotal();
-  console.log(iva);
+  const newaR = { bill, totalWithIva, iva };
+
+
+
+
 
   return (
     <section className="order">
@@ -57,7 +62,10 @@ export default function Bill() {
       </div>
       <div className="bill-botton">
         <Button cName="btn-cancel abort" text="Cancelar"></Button>
-        <Button cName="btn-send send" text="Enviar"></Button>
+        <Button
+          cName="btn-send send"
+          text="Enviar"
+        ></Button>
       </div>
     </section>
   );

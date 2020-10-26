@@ -44,6 +44,7 @@ const NuevaOrden = () => {
       <Bill></Bill>
      </WeiterProvider>
     </div>
+    
   );
 };
 
