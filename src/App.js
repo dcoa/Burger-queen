@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
+import NewOrder from './components/pages/NewOrder';
+import OrderDeliver from './components/pages/OrderDeliver';
+import OrderChef from './components/pages/OrderChef';
+import DeliverChef from './components/pages/DeliverChef';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/nueva-orden" exact component={NewOrder} />
+          <Route path="/ordenes-por-entregar" exact component={OrderDeliver} />
+          <Route path="/pedidos" exact component={OrderChef} />
+          <Route path="/pedidos-terminados" exact component={DeliverChef} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

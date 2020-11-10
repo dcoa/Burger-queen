@@ -1,0 +1,11 @@
+@import "src/App.scss";
+
+.item-order{
+    align-items: center;
+    height: 48px ;
+    border-top: 1px solid $zeta;
+}
+
+td:first-child, td:last-child{
+  text-align: center;
+}

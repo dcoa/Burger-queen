@@ -1,0 +1,54 @@
+@import "src/App.scss";
+
+.card {
+  margin: 20px auto;
+  width: 237px;
+  height: 133px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: $beta;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+  "Producto Producto Producto ."
+  "Imagen Input Input ."
+  "Precio Button Button .";
+}
+
+.card-name {
+  grid-area: Producto;
+  text-align: center;
+}
+.card-info-item {
+  grid-area: Imagen;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+.card-info-input {
+  grid-area: Input;
+  display: flex;
+  & > input {
+  width: 74px;
+  height: 30px;
+  margin: auto;
+  border: none;
+  text-align: center;
+  }
+}
+.card-btn {
+  grid-area: Button;
+}
+.card-info-price {
+  grid-area: Precio;
+  text-align: center;
+  line-height: 2;
+}
+
+.card-options{
+  position:relative;
+  top:auto;
+  bottom: 25px;
+}

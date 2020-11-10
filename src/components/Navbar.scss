@@ -1,0 +1,65 @@
+@import "src/App.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 100vw;
+  height: 100px;
+  background-color: $omega;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+  & > div > p {
+    text-transform: uppercase;
+  }
+}
+
+.navbar-logo{
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  &.name {
+    position: relative;
+    left: 400px;
+    text-transform: uppercase;
+    > p{
+      color:$gamma;
+    }
+  }
+  .nav-links {
+    display: block;
+    padding: 35px  20px;
+    text-decoration: none;
+    margin: auto;
+    &.active {
+      border-bottom: 4px solid $gamma;
+    }
+  }
+}
+
+.nav-notifications{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: $gamma;
+  color:white;
+  display: inline-block;
+  line-height: 1.7;
+  text-align: center;
+
+
+}
