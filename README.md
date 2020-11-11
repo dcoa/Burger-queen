@@ -148,6 +148,17 @@ rápidamente a los clientes que las hicieron.
   terminado. Todo esto para poder tener estadísticas en el futuro.
 
 ***
+###  Protipo de Alta fidelidad
+
+ * #### Vista Home
+![out](https://github.com/tatianatorog/Burger-queen/blob/test-bq/src/assets/Home.png?raw=true)
+
+* #### Vista Mesero
+![out](https://github.com/tatianatorog/Burger-queen/blob/test-bq/src/assets/Mesero.png?raw=true)
+
+* #### Vista Chef
+
+![out](https://github.com/tatianatorog/Burger-queen/blob/test-bq/src/assets/Chef.png?raw=true)
 
 
 ## 3. Objetivos de aprendizaje
