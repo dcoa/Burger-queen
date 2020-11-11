@@ -245,6 +245,8 @@ A continuación puedes ver los objetivos de aprendizaje de este proyecto:
 La aplicación desplegada  tiene un 80% o más el las puntuaciones de
 Performance, Progressive Web App, Accessibility y Best Practices de Lighthouse.
 
+![out](https://github.com/tatianatorog/Burger-queen/blob/test-bq/src/assets/ligthouse.png?raw=true)
+
 La aplicación  hace uso de `npm-scripts` y cuenta con scripts `start`,
 `test`, `build` y `deploy`, que se encargan de arrancar, correr las pruebas,
 empaquetar y desplegar la aplicación respectivamente.
