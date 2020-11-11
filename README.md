@@ -67,7 +67,6 @@ con todos sus _productos_. El usuario puede ir eligiendo qué _productos_
 agregar y la interfaz muestra el _resumen del pedido_ con el
 costo total.
 
-![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif)
 
 ***
 ## 2. Definición del producto
