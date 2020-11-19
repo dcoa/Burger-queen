@@ -79,7 +79,7 @@ export default function Bill() {
                 type="text"
                 id="client"
                 className="bill-info-input"
-                placeholder= "Nombre"
+                placeholder="Nombre"
                 value={client}
                 onChange={handleClient}
               />
@@ -87,23 +87,30 @@ export default function Bill() {
             {error}
           </label>
         </div>
-        <div className="bill-title">
-          <P>Cant</P>
-          <P>Producto</P>
-          <P>Precio</P>
-          {products}
-        </div>
+        <table>
+          <thead className="bill-title">
+            <tr>
+              <th><P>Cant</P></th>
+              <th><P>Producto</P></th>
+              <th><P>Precio</P></th>
+              <th>  </th>
+            </tr>
+          </thead>
+          <tbody>
+            {products}
+          </tbody>
+        </table>
         <div className="bill-total">
           <P2>IVA(10%)</P2>
           <P2>
-            $
+          $
             {tax}
           </P2>
         </div>
         <div className="bill-total">
           <H2>TOTAL</H2>
           <H2>
-            $
+          $
             {totalWithIva}
           </H2>
         </div>
@@ -120,6 +127,6 @@ export default function Bill() {
           onClick={handleSend}
         />
       </div>
-    </section>
+    </section >
   );
 }

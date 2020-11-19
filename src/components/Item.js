@@ -12,19 +12,23 @@ export default function Item({ name, price, quantity, grid, id }) {
   };
 
   return (
-    <div className={`bill-box ${grid}`}>
-      <P2 className="bill-box-quantities">{quantity}</P2>
-      <P2>{name}</P2>
-      <P2 className="bill-box-price">
-        {`$${price}`}
-        {' '}
-      </P2>
-      <img
-        src={Delete}
-        alt="delete"
-        className="bill-box-delete"
-        onClick={handleDelete}
-      />
-    </div>
+    <tr className='bill-box'>
+      <td><P2 className="bill-box-quantities">{quantity}</P2></td>
+      <td><P2>{name}</P2></td>
+      <td>
+        <P2 className="bill-box-price">
+          {`$${price}`}
+        </P2>
+      </td>
+      <td>
+        <img
+          src={Delete}
+          alt="delete"
+          className="bill-box-delete"
+          onClick={handleDelete}
+          height='30px'
+        />
+      </td>
+    </tr>
   );
 }
