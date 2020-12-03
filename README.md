@@ -253,3 +253,10 @@ empaquetar y desplegar la aplicación respectivamente.
 Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_,
 _lines_ y _branches_.
 
+
+## 4. Autores
+
+Tatiana Toro [@tatianatorog](https://github.com/tatianatorog)
+
+Diana Catalina Olarte [@dcoa](https://github.com/dcoa)
+
